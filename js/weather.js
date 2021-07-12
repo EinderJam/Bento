@@ -36,7 +36,6 @@ function getWeather(latitude, longitude) {
   fetch(api)
     .then(function (response) {
       let data = response.json();
-      console.log("weather response: " + data);
       return data;
     })
     .then(function (data) {
